@@ -1,0 +1,195 @@
+  @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins&display=swap');
+
+  /* body */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration:none;
+    text-transform: capitalize;
+    transform: all 0.2s linear;
+    font-family: 'Prompt', serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 0.5rem;
+    font-size: 66%;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 1rem 3%; 
+    background: black;     /*#486AAE    */
+    z-index: 1001;
+    position: fixed;
+}
+
+/* tata logo */
+header .logo{
+    font-size: 2.8rem;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+/* -------------the anchor tags in navigation bar */
+header .nav-links{
+    width:55%;
+}
+header .nav-links a{
+    margin: 0 0.8rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    line-height: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+header .nav-links a:hover{
+    color: black;
+    /* background-color: white;       */
+
+    font-weight: bold;
+}
+header .fa-bars{
+    font-size: 2.1rem;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+/* hero page css*/
+
+ .hero .container{
+    /* position: absolute; */
+    left: 0;
+    top: 9vh;
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    animation: change 20s ease-in-out  infinite; 
+    /* background-size: cover;                 background changing animation*/
+}
+.hero .container .outer{
+    /* position:absolute; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+.hero .container .outer .details{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.details h1{
+    font-size: 6rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    color: rgb(152, 255, 246);
+    display: inline-block;
+}
+.details h2{
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+}
+.details h2 span{
+    font-family: 'Orbitron', sans-serif;
+}
+@keyframes change{
+    0%,100%{
+        background: url("https://a-static.besthdwallpaper.com/one-piece-poster-wallpaper-1280x720-29934_45.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    25%{
+        background: url("https://flashbackwebsite.files.wordpress.com/2016/10/6b2d8-one2bpiece2bwallpapers2b3.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    50%{
+        background: url("https://images3.alphacoders.com/905/thumb-1920-905410.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    75%{
+        background: url("https://wallpapers.com/images/featured/0cp6bwz93q5udc63.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/*  responsive nav bar */
+
+/* space between links when they are shrinked */
+@media screen and (max-width:1024px) {
+    header .navbar{
+        width:55%;
+        
+    }
+}
+
+/* for mobile perspective */
+@media screen and (max-width:768px) {
+    .logo{
+        margin-left: 30vw;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position:absolute;
+        right: 0;
+        height: 75vh;
+        font-size: 35px;
+        /* margin-bottom: 40px; */
+        top: 9.6vh;
+        background: black; /*#486AAE*/
+       
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+       }
+      header .fa-bars{
+        display: block;
+        justify-content: space-around;
+      }
+      /*     will work only in small screen hover effect ---------    */
+      header .nav-links a:hover{
+        color: black;
+        background-color: white;      
+    
+        font-weight: bold;
+    }
+}
+
+/* for the animation effect after clicking on the bars */
+.nav-active{
+    transform: translateX(0%);
+}
+

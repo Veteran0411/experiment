@@ -84,7 +84,7 @@ header .fa-bars{
     width: 100%;
     overflow:hidden;
     animation: change 20s ease-in-out  infinite; 
-    /* background-size: cover;                 background changing animation*/
+    background-size: cover;                 /* background changing animation*/
 }
 .hero .container .outer{
     /* position:absolute; */
@@ -186,6 +186,40 @@ header .fa-bars{
     
         font-weight: bold;
     }
+    .hero .container{
+        background-size: cover;
+        animation: change1 20s ease-in-out infinite;
+    }
+    .details h1{
+        font-size: 3.6rem;
+        letter-spacing: 2px;
+    }
+    .details h2{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    @keyframes change1 {
+        0%,100%{
+            background: url("https://wallpaperaccess.com/full/1908495.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        25%{
+            background: url("https://mfiles.alphacoders.com/787/787656.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        50%{
+            background: url("https://cdn.wallpapersafari.com/59/4/zjkAy1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        75%{
+            background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48f15006-bc11-49fa-ae79-396c79c46b6a/dd08wo2-451770fd-6416-488e-b001-7057fa6a22ce.png/v1/fill/w_607,h_1316,q_70,strp/one_piece_iphone_wallpaper_by_afifrafiqin_dd08wo2-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjQzNiIsInBhdGgiOiJcL2ZcLzQ4ZjE1MDA2LWJjMTEtNDlmYS1hZTc5LTM5NmM3OWM0NmI2YVwvZGQwOHdvMi00NTE3NzBmZC02NDE2LTQ4OGUtYjAwMS03MDU3ZmE2YTIyY2UucG5nIiwid2lkdGgiOiI8PTExMjUifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.UZg4pSDnS2fYJVB-dQvCEckBzZxOdlu-G7tVo-TJ8qU");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
 }
 
 /* for the animation effect after clicking on the bars */
@@ -193,3 +227,8 @@ header .fa-bars{
     transform: translateX(0%);
 }
 
+.after2{
+    height: 800px;
+    width: 100%;
+    background-color: black;
+}

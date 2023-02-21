@@ -209,12 +209,13 @@ header .fa-bars{
     width: 25rem;
 }
 .about .box .content{
-    padding: 7rem;
+    margin-left: 6rem;
 }
 .about .box .content h3{
     color: rgb(152, 255, 246);
     font-size: 3.5rem;
     letter-spacing: 3px;
+    text-align: center;
     margin-bottom: 20px;
     font-family: 'Orbitron', sans-serif;
 }
@@ -226,10 +227,10 @@ header .fa-bars{
     margin-bottom: 4rem;
 }
 .about .box .content div{
-    /* padding: 10px; */
+    padding: 10px;
     margin-top: 20px;
     font-size: 1.8rem;
-    padding-left: 3rem;
+    /* padding-left: 0; -----------------------------------------------------*/
     font-family: 'Orbitron', sans-serif;
     color: #FAD3E7;
 }
@@ -247,6 +248,10 @@ header .fa-bars{
 @media screen and (max-width:768px) {
     body{
         overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .logo{
+        margin-left: 28vw;
     }
     .nav-links{
         position:absolute;
@@ -314,28 +319,45 @@ header .fa-bars{
             background-attachment: fixed;
         }
     }
-    .about .box{
+     .about .box{
         flex-wrap: wrap;
         text-align: center;
+        overflow: hidden;
+        
     }
-    /* .about .box .content div{
+    .about .box .content div{
         text-align: left;
-    } */
+      
+    } 
     .about .box .image img{
         width: 90%;
+        overflow: hidden;
+     
     }
     .about h2{
         font-size: 3.3rem;
+        overflow: hidden;
+      
+    }
+    .about .box .content{
+        margin-left: 0rem;
+        text-align: center;
     }
     .about .box .content h3{
         font-size: 3rem;
+        overflow: hidden;
+      padding-top: 3rem;
     }
     .about .box .content p{
         font-size: 1.3rem;
+        overflow: hidden;
+     
     }
     .about .box .content div{
         font-size: 1.2rem;
-    }
+        overflow: hidden;
+     text-align: center;
+    } 
 }
 
 /* for the animation effect after clicking on the bars */

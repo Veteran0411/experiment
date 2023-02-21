@@ -28,7 +28,7 @@ header{
     align-items: center;
     justify-content:space-between ;
     padding: 1rem 3%; 
-    background: black;     /*#486AAE    */
+    background: black ;     /*#486AAE    */
     z-index: 1001;
     position: fixed;
 }
@@ -63,10 +63,13 @@ header .nav-links a{
     font-family: 'Poppins', sans-serif;
 }
 header .nav-links a:hover{
-    color: black;
+    color: #F55050;
     /* background-color: white;       */
-
+    
     font-weight: bold;
+
+    
+    
 }
 header .fa-bars{
     font-size: 2.1rem;
@@ -83,7 +86,7 @@ header .fa-bars{
     height: 100vh;
     width: 100%;
     overflow:hidden;
-    animation: change 20s ease-in-out  infinite; 
+    animation: change 27s ease-in-out  infinite; 
     background-size: cover;                 /* background changing animation*/
 }
 .hero .container .outer{
@@ -139,7 +142,94 @@ header .fa-bars{
         background-attachment: fixed;
     }
 }
+#king{
+    color: rgb(152, 255, 246);
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.btn{
+    display: inline-block;
+    padding: 0.8rem 3.8rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    border: 0.1rem solid white;
+    color: rgb(152, 255, 246);
+    background-color:rgba(19, 19, 19, 0.6);
+    border-radius: 30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
 
+/* about section css*/
+
+.about{
+    background-color:black;
+    padding: 3rem 9%;
+}
+.about .box{    /* luffy zoro stuff*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin-top: 7rem;
+}
+.about .box .image img{
+    width: 60rem;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.abt-heading{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 4.2rem;
+    background-color: black;
+}
+.abt-heading h2{
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(152, 255, 246);
+    top: 7rem;
+    margin-bottom: 0rem;
+}
+.abt-heading div{
+    display: inline-block;
+    border-bottom: 0.3rem solid rgb(152, 255, 246);
+    width: 15rem;
+    transition: width 0.3s;
+}
+.abt-heading div:hover{
+    width: 25rem;
+}
+.about .box .content{
+    padding: 7rem;
+}
+.about .box .content h3{
+    color: rgb(152, 255, 246);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+.about .box .content p{
+    color: rgb(152, 255, 246);
+    font-size: 1.9rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 4rem;
+}
+.about .box .content div{
+    /* padding: 10px; */
+    margin-top: 20px;
+    font-size: 1.8rem;
+    padding-left: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #FAD3E7;
+}
 /*  responsive nav bar */
 
 /* space between links when they are shrinked */
@@ -188,6 +278,7 @@ header .fa-bars{
     }
     .hero .container{
         background-size: cover;
+        /* height: 100vh;     test than add it */
         animation: change1 20s ease-in-out infinite;
     }
     .details h1{
@@ -197,6 +288,9 @@ header .fa-bars{
     .details h2{
         font-size: 1.5rem;
         letter-spacing: 2px;
+    }
+    #king{
+        font-size: 2rem;
     }
     @keyframes change1 {
         0%,100%{
@@ -220,6 +314,28 @@ header .fa-bars{
             background-attachment: fixed;
         }
     }
+    .about .box{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    /* .about .box .content div{
+        text-align: left;
+    } */
+    .about .box .image img{
+        width: 90%;
+    }
+    .about h2{
+        font-size: 3.3rem;
+    }
+    .about .box .content h3{
+        font-size: 3rem;
+    }
+    .about .box .content p{
+        font-size: 1.3rem;
+    }
+    .about .box .content div{
+        font-size: 1.2rem;
+    }
 }
 
 /* for the animation effect after clicking on the bars */
@@ -227,8 +343,3 @@ header .fa-bars{
     transform: translateX(0%);
 }
 
-.after2{
-    height: 800px;
-    width: 100%;
-    background-color: black;
-}

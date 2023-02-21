@@ -169,7 +169,7 @@ header .fa-bars{
 
 .about{
     background-color:black;
-    padding: 3rem 9%;
+    padding: 3rem 8%;
 }
 .about .box{    /* luffy zoro stuff*/
     display: flex;
@@ -245,9 +245,6 @@ header .fa-bars{
 
 /* for mobile perspective */
 @media screen and (max-width:768px) {
-    .logo{
-        margin-left: 27vw;
-    }
     body{
         overflow-x: hidden;
     }

@@ -10,7 +10,7 @@
     outline: none;
     border: none;
     text-decoration:none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transform: all 0.2s linear;
     font-family: 'Prompt', serif;
 }
@@ -214,12 +214,14 @@ header .fa-bars{
 .about .box .content h3{
     color: rgb(152, 255, 246);
     font-size: 3.5rem;
+    letter-spacing: 3px;
     margin-bottom: 20px;
     font-family: 'Orbitron', sans-serif;
 }
 .about .box .content p{
     color: rgb(152, 255, 246);
     font-size: 1.9rem;
+    letter-spacing: 3px;
     font-family: 'Orbitron', sans-serif;
     margin-bottom: 4rem;
 }
@@ -243,8 +245,11 @@ header .fa-bars{
 
 /* for mobile perspective */
 @media screen and (max-width:768px) {
+    *{
+        overflow-x: hidden;
+    }
     .logo{
-        margin-left: 30vw;
+        margin-left: 27vw;
     }
     body{
         overflow-x: hidden;
@@ -269,6 +274,7 @@ header .fa-bars{
       header .fa-bars{
         display: block;
         justify-content: space-around;
+        margin-right: 20px;
       }
       /*     will work only in small screen hover effect ---------    */
       header .nav-links a:hover{
@@ -344,3 +350,4 @@ header .fa-bars{
     transform: translateX(0%);
 }
 
+/*  experiments coding section*/ 

@@ -268,7 +268,6 @@ header .fa-bars{
       header .fa-bars{
         display: block;
         justify-content: space-around;
-        margin-right: 20px;
       }
       /*     will work only in small screen hover effect ---------    */
       header .nav-links a:hover{

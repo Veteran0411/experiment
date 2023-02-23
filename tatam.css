@@ -246,7 +246,7 @@ header .fa-bars{
 }
 .services .row{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));    
     gap: 0.8rem;
     margin-top: 5rem;
     margin-left: 1rem;
@@ -279,6 +279,71 @@ header .fa-bars{
 
 
 /* services css complete//////////////////////////////////////////// */
+
+/* portfolio section css here pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp */
+.portfolio{
+    box-sizing: border-box;
+    background-color: black;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+.portfolio .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    gap: 1rem;
+    margin: 6rem;
+    width: 90%;
+}
+.portfolio .row .box{
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+}
+.portfolio .row .box:hover img{
+    transform: translateY(-100%);
+}
+.portfolio .row .box img{
+    height: 100%;
+    width: 100%;
+    transition: transform 1s;
+    object-fit: cover;
+}
+.portfolio .row .box:hover .content{
+    transform: translateY(0%);
+}
+.portfolio .row .box .content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 3rem 2rem;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    padding-top: 2.5rem;
+}
+.porthead{ /* class of heading of portfolio*/
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(152, 255, 246) ;
+    letter-spacing: 2px;
+    margin-top: 4rem;
+}
+.portpara{
+    padding: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    color:#FAD3E7;
+    margin-bottom: 0;
+}
+
+
+/* portfolio section css complete ppppppppppppppppppppppppppppppppppppppp*/
+
+
 /*  responsive nav bar */
 
 /* space between links when they are shrinked */
@@ -406,8 +471,32 @@ header .fa-bars{
     .services .row{
         grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
     }
+    .services h2{
+        font-size: 3.3rem;
+    }
 }
 
+@media(max-width:750px) {
+    .portfolio .row{
+        grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+        margin: 1.5rem;
+    }
+     .portfolio .row .box{
+        padding-bottom: 1rem;
+    }
+    .portfolio h2{
+        font-size: 3.3rem;
+    }
+    .portfolio .row .box h3{
+        font-size: 2rem;
+    }
+    .portfolio .row .box p{
+        font-size: 1.6rem;
+    }
+    .portfolio .row .box a{
+        font-size: 1.3rem;
+    }
+}
 /* for the animation effect after clicking on the bars */
 .nav-active{
     transform: translateX(0%);

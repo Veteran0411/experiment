@@ -438,7 +438,11 @@ header .fa-bars{
     object-fit: cover;
 }
 .blog .row video{
-    border-radius:30px;
+    border-radius: 30px;
+}
+#singham{
+    width: 400px;
+    height: auto;
 }
 .blog .row h3{
     color:rgb(152, 255, 246) ;
@@ -665,6 +669,11 @@ header .fa-bars{
     }
     .blog .row .box video{
         width: 200px;
+        height: auto;
+        border-radius: 30px;
+    }
+    #singham{
+        width: 100%;
         height: auto;
     }
     .weicome{

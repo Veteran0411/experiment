@@ -5,6 +5,7 @@
 
   /* body */
 *{
+    /* background-color: black; */
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +15,9 @@
     /* text-transform: capitalize; */
     transform: all 0.2s linear;
     font-family: 'Orbitron', sans-serif;
+}
+body{
+    background-color: black;
 }
 html{
     scroll-behavior: smooth;
@@ -354,7 +358,7 @@ header .fa-bars{
     background-color: black;
 }
 .team .row{
-    background: url("https://e0.pxfuel.com/wallpapers/728/996/desktop-wallpaper-minimalistic-humor-funny-e-t-black-background-phone-booth-dark-funny.jpg");
+    background: url("https://wallpaperaccess.com/full/3358359.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -371,12 +375,12 @@ header .fa-bars{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(14, 14, 14, 0.3);
 
 }
 
 .team .team-slid .box .content{
-    background: #222;
+    background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.7);
     text-align: center;
     color: white;
@@ -385,7 +389,7 @@ header .fa-bars{
     height: 30rem;
 }
 .team .team-slid .box:hover .content{
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .team .team-slid .box .image img{
     border-radius: 30px;
@@ -409,6 +413,64 @@ header .fa-bars{
 
 }
 /* teams section css complete here */
+
+/* blog section css starts here ---------------------------*/
+
+.blog{
+    background-color: black;
+}
+.blog .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    column-gap: 2rem;
+    row-gap: 8rem;
+    margin-top: 5rem;
+    padding-left:4rem ;
+    padding-right:4rem ;
+    padding-top:4rem ;
+    padding-bottom:4rem ;
+    box-sizing: border-box;
+
+}
+.blog .row img{
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.blog .row h3{
+    color:rgb(152, 255, 246) ;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+.blog .row p{
+    color:rgb(152, 255, 246) ;
+    font-size: 1.8rem;
+    margin: .8rem 0;
+}
+.blog .row .box{
+    padding: 3rem;
+    box-sizing: border-box;
+    border-radius: 0px;
+    background-color: rgba(49, 49, 49, 0.5);
+  
+}
+.blog .row .box:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(69, 69, 69, 0.5);
+}
+.welcome{
+    padding: 7rem 0rem;
+    text-align: center;
+    height: 18rem;
+    background-color: black;
+}
+
+.welcome span{
+    font-size: 3.3rem;
+    color:rgb(152, 255, 246) ;
+}
+
+/* blog section css completed------------------------------ */
 
 /* ******************************** responsive nav bar */
 
@@ -577,6 +639,40 @@ header .fa-bars{
     .team .team-slid .box .content p{
         font-size: 2rem;
     }
+    .team .row{
+        background: url("https://wallpaperaccess.com/full/2013750.png");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .blog{
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .blog .row{
+        grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+        margin: 1.5rem;
+    }
+    .blog .row .box h3{
+        font-size: 2rem;
+    }
+    .blog .row .box p{
+        font-size: 1.6rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .row .box video{
+        width: 200px;
+        height: auto;
+    }
+    .weicome{
+        padding: 0rem 0rem;
+        box-sizing: border-box;
+        height: 6rem;
+    }
+    .welcome span{
+        font-size: 1.8rem;
+    }
+
 }
 /* for the animation effect after clicking on the bars */
 .nav-active{

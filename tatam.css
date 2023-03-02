@@ -421,6 +421,9 @@ header .fa-bars{
 }
 .blog .row{
     display: grid;
+    background: url("https://r4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-39a028ad21facdab26a7d87fb061260d.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
     column-gap: 2rem;
     row-gap: 8rem;
@@ -458,11 +461,11 @@ header .fa-bars{
     padding: 3rem;
     box-sizing: border-box;
     border-radius: 0px;
-    background-color: rgba(49, 49, 49, 0.5);
+    background-color: rgba(43, 41, 41, 0.7);
   
 }
 .blog .row .box:hover{
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
     background-color: rgba(69, 69, 69, 0.5);
 }
 .welcome{
@@ -658,6 +661,10 @@ header .fa-bars{
     .blog .row{
         grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
         margin: 1.5rem;
+        background: url("https://e1.pxfuel.com/desktop-wallpaper/717/2/desktop-wallpaper-for-pacific-blue-iphone-12-series-r-iphone-pacific-blue-thumbnail.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .blog .row .box h3{
         font-size: 2rem;

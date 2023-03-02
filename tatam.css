@@ -461,12 +461,12 @@ header .fa-bars{
     padding: 3rem;
     box-sizing: border-box;
     border-radius: 0px;
-    background-color: rgba(43, 41, 41, 0.7);
-  
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.7);
 }
 .blog .row .box:hover{
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
-    background-color: rgba(69, 69, 69, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .welcome{
     padding: 7rem 0rem;

@@ -437,6 +437,9 @@ header .fa-bars{
     border-radius: 30px;
     object-fit: cover;
 }
+.blog .row video{
+    border-radius:30px;
+}
 .blog .row h3{
     color:rgb(152, 255, 246) ;
     font-size: 3rem;
